@@ -1,26 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Solitreo&display=swap");
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
+body {
+  background-color: rgb(255, 244, 180);
+}
+
+.gameName {
+  font-family: "Solitreo", sans-serif;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.gameName__title {
+  font-size: 6rem;
+  margin-top: 50px;
+}
+.gameName__tagline {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+#resetGame {
+  font-size: 1.3rem;
+  padding: 10px;
+  margin-bottom: 30px;
+  width: 10rem;
+}
+
+main {
+  font-family: "Poppins", sans-serif;
+}
+
 .cardTable {
   border: 2px solid grey;
+  background-color: white;
   display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "user user computer" "stats duel waiting";
 }
 
 .catCard {
   border: 1px solid green;
   width: 15rem;
   height: 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 20px;
+  margin: 10px;
 }
 .catCard__stats {
   border: 2px red solid;
+  font-size: 1.3rem;
+  grid-area: stats;
+}
+.catCard__user {
+  grid-area: user;
 }
 .catCard__computer {
   border: 2px solid blue;
+  font-size: 1.3rem;
+  grid-area: waiting;
 }
 
 .duelButton {
   border: 2px solid yellow;
+  grid-area: duel;
+}
+
+#duel {
+  font-size: 1.3rem;
+  padding: 10px;
+  margin: 10px;
+  width: 10rem;
 }/*# sourceMappingURL=styles.css.map */

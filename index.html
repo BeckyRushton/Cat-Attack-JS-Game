@@ -10,14 +10,15 @@
   </head>
   <body>
     <header class="gameName">
-      <h1>Cat Attack</h1>
-      <h3>The highest scoring cat wins!</h3>
-      <button class="resetGame">New Game</button>
+      <div class="gameName__title">Cat Attack</div>
+      <div class="gameName__tagline">The highest scoring cat wins!</div>
+      <button id="resetGame">New Game</button>
     </header>
     <main>
       <div class="cardTable">
-        <div class="catCard" id="userCard">Click to choose a card</div>
-        <div class="catCard" id="computerCard">Cat Attack</div>
+        <div class="catCard" class="userCard">Click to choose a card</div>
+        <div class="divide"></div>
+        <div class="catCard" class="computerCard">Cat Attack</div>
         <div class="catCard__stats">
           <label for="stat01">Stat 1</label>
           <input id="stat01" type="checkbox" />
