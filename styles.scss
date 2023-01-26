@@ -36,52 +36,76 @@ main {
   font-family: $text-font;
 }
 .cardTable {
-  border: 2px solid grey;
   background-color: white;
+  height: 60vh;
+  margin: 5%;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
   grid-template-areas:
-    "user user nil computer computer"
-    "stats stats duel waiting waiting";
+    "user user user nill computer computer computer"
+    "user user user nill computer computer computer"
+    "stats stats duel duel duel waiting waiting";
 }
 
-.catCard {
+.catStats {
+  border: 2px red solid;
+  font-size: 1.3rem;
+  grid-area: stats;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding-left: 30px;
+}
+.computerWaiting {
+  border: 2px solid blue;
+  font-size: 1.3rem;
+  grid-area: waiting;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.catCardUser {
+  grid-area: user;
+  border: 2px purple solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1.5rem;
+}
+.catCardComputer {
+  grid-area: computer;
   border: 1px solid green;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   font-size: 1.5rem;
-
-  &__stats {
-    border: 2px red solid;
-    font-size: 1.3rem;
-    grid-area: stats;
-  }
+  font-family: $main-font;
 }
-&__computer {
-  border: 2px solid blue;
-  font-size: 1.3rem;
-  grid-area: waiting;
-}
-.userCard {
-  grid-area: user;
-}
-.computerCard {
-  grid-area: computer;
-}
-.divide {
-  grid-area: nil;
-}
-.duelButton {
-  border: 2px solid yellow;
-  grid-area: duel;
+.catCardDivide {
+  grid-area: nill;
+  border: 1px solid black;
+  font-size: 3rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: $main-font;
+}
+.duelButton {
+  border: 2px solid rgb(255, 176, 30);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  grid-area: duel;
 }
 
 #duel {
   font-size: 1.3rem;
+  padding: 10px;
+  width: 10rem;
 }
