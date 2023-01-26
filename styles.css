@@ -1,1 +1,26 @@
-/*# sourceMappingURL=styles.css.map */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.cardTable {
+  border: 2px solid grey;
+  display: grid;
+}
+
+.catCard {
+  border: 1px solid green;
+  width: 15rem;
+  height: 20rem;
+}
+.catCard__stats {
+  border: 2px red solid;
+}
+.catCard__computer {
+  border: 2px solid blue;
+}
+
+.duelButton {
+  border: 2px solid yellow;
+}/*# sourceMappingURL=styles.css.map */

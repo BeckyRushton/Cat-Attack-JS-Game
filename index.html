@@ -8,5 +8,29 @@
     <script src="main.js" defer></script>
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body></body>
+  <body>
+    <header class="gameName">
+      <h1>Cat Attack</h1>
+      <h3>The highest scoring cat wins!</h3>
+      <button class="resetGame">New Game</button>
+    </header>
+    <main>
+      <div class="cardTable">
+        <div class="catCard" id="userCard">Click to choose a card</div>
+        <div class="catCard" id="computerCard">Cat Attack</div>
+        <div class="catCard__stats">
+          <label for="stat01">Stat 1</label>
+          <input id="stat01" type="checkbox" />
+          <label for="stat02">Stat 2</label>
+          <input id="stat02" type="checkbox" />
+          <label for="stat03">Stat 3</label>
+          <input id="stat03" type="checkbox" />
+        </div>
+        <div class="duelButton">
+          <button id="duel">Duel</button>
+        </div>
+        <div class="catCard__computer">Computer is waiting...</div>
+      </div>
+    </main>
+  </body>
 </html>
