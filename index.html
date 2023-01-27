@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cat Attack</title>
-    <script src="main.js" defer></script>
+    <script src="main.js" type="module" defer></script>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -14,31 +14,34 @@
       <div class="gameName__tagline">The highest scoring cat wins!</div>
       <button id="resetGame">New Game</button>
     </header>
-    <main>
+    
       <div class="cardTable">
         <div class="catCardUser">Click to choose a card</div>
         <div class="catCardDivide">vs</div>
         <div class="catCardComputer">Cat Attack</div>
 
-        <div class="catStats">
-          <div class="statOne">
-            <label for="stat01">Cuteness:<label>
+        <div class="catStats"> 
+          <div>Choose your method of attack:</div> 
+          <div>
+            <div class="statOne">
+            <label for="stat01">Cuteness<label>
             <input id="stat01" type="checkbox" />
           </div>
           <div class="statTwo">
-            <label for="stat02">Stealth:<label>
+            <label for="stat02">Stealth <label>
             <input id="stat02" type="checkbox" />
           </div>
           <div class="statThree">
-            <label for="stat03">Agility:<label>
+            <label for="stat03">Agility<label>
             <input id="stat03" type="checkbox" />
           </div>
+        </div>
+          
         </div>
         <div class="duelButton">
           <button id="duel">Duel</button>
         </div>
         <div class="computerWaiting">Computer is waiting...</div>
       </div>
-    </main>
   </body>
 </html>

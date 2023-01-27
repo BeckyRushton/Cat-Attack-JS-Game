@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: rgb(255, 244, 180);
+  background-color: rgb(255, 255, 255);
 }
 
 .gameName {
@@ -29,79 +29,107 @@ body {
 #resetGame {
   font-size: 1.3rem;
   padding: 10px;
-  margin-bottom: 30px;
   width: 10rem;
-  background-color: rgb(28, 16, 82);
+  background-color: rgb(25, 141, 21);
   color: white;
 }
 
-main {
-  font-family: "Poppins", sans-serif;
-}
-
 .cardTable {
-  background-color: white;
-  height: 60vh;
+  background-color: rgb(127, 137, 148);
   margin: 5%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  grid-template-areas: "user user user nill computer computer computer" "user user user nill computer computer computer" "stats stats duel duel duel waiting waiting";
+  grid-template-areas: "user user user nill computer computer computer" "user user user nill computer computer computer" "stats stats stats duel waiting waiting waiting";
 }
 
 .catStats {
-  border: 2px red solid;
+  font-family: "Poppins", sans-serif;
+  color: white;
   font-size: 1.3rem;
   grid-area: stats;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: flex-start;
-  padding-left: 30px;
+  margin: 40px;
+  padding-left: 50px;
+  background-color: rgb(58, 64, 70);
+  border-radius: 5px;
 }
 
 .computerWaiting {
-  border: 2px solid blue;
+  font-family: "Poppins", sans-serif;
+  color: white;
   font-size: 1.3rem;
   grid-area: waiting;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: rgb(58, 64, 70);
+  margin: 40px;
+  border-radius: 5px;
+}
+
+.catCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  background-color: rgb(20, 18, 29);
+  height: 500px;
+  width: 300px;
+  padding: 20px;
+  border-radius: 5px;
+  margin: 20px;
+  gap: 20px;
+}
+.catCard__image {
+  width: 90%;
+  border-radius: 5px;
+}
+.catCard__stats {
+  width: 90%;
+  background-color: rgb(44, 40, 74);
+  color: white;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1.1rem;
 }
 
 .catCardUser {
   grid-area: user;
-  border: 2px purple solid;
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  font-size: 1.5rem;
+  width: 100%;
 }
 
 .catCardComputer {
   grid-area: computer;
-  border: 1px solid green;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-size: 1.5rem;
+  width: 100%;
   font-family: "Solitreo", sans-serif;
+  font-size: 5rem;
+  color: white;
 }
 
 .catCardDivide {
   grid-area: nill;
-  border: 1px solid black;
   font-size: 3rem;
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: "Solitreo", sans-serif;
+  color: white;
 }
 
 .duelButton {
-  border: 2px solid rgb(255, 176, 30);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -110,9 +138,10 @@ main {
 }
 
 #duel {
-  font-size: 1.3rem;
-  padding: 10px;
-  width: 10rem;
+  padding: 20px;
+  width: 13rem;
   background-color: rgb(163, 44, 44);
   color: white;
+  font-family: "Solitreo", sans-serif;
+  font-size: 1.7rem;
 }/*# sourceMappingURL=styles.css.map */
