@@ -1,5 +1,5 @@
 import catDeck from "./deck.js";
-const catCards = document.querySelector(".catCardUser");
+const catDeckAll = document.querySelector(".catDeckAll");
 
 const makeCard = (catCharacters) => {
   const cardHTML = `<div class="catCard">
@@ -15,6 +15,8 @@ const makeCard = (catCharacters) => {
 };
 
 const populatePage = () => {
-  catCards.innerHTML = catDeck.map((character) => makeCard(character)).join("");
+  catDeckAll.innerHTML = catDeck
+    .map((character) => makeCard(character))
+    .join("");
 };
 populatePage();

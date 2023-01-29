@@ -46,14 +46,14 @@ body {
 .catStats {
   font-family: "Poppins", sans-serif;
   color: white;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   grid-area: stats;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: flex-start;
   margin: 40px;
-  padding-left: 50px;
+  padding: 20px;
   background-color: rgb(58, 64, 70);
   border-radius: 5px;
 }
