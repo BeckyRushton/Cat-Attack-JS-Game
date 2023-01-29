@@ -108,7 +108,7 @@ const catDeck = [
   },
 
   {
-    name: "Theif Cat",
+    name: "Thief Cat",
     cuteness: 7,
     stealth: 10,
     agility: 9,

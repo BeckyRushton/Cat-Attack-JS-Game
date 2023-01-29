@@ -143,3 +143,9 @@ body {
   font-family: $main-font;
   font-size: 1.7rem;
 }
+
+.catDeckAll {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
