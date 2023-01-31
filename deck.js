@@ -54,10 +54,10 @@ const catDeck = [
   },
 
   {
-    name: "Smiling Cat",
+    name: "Polite Cat",
     cuteness: 8,
     stealth: 7,
-    agility: 6,
+    agility: 7,
     image:
       "https://ik.imagekit.io/cdrmfch7b/Smile_cat.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1675028832602",
   },
@@ -72,10 +72,10 @@ const catDeck = [
   },
 
   {
-    name: "Salad Cat",
+    name: "Yuck Cat",
     cuteness: 6,
     stealth: 7,
-    agility: 8,
+    agility: 9,
     image:
       "https://ik.imagekit.io/cdrmfch7b/Salad_cat.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1675026371910",
   },
@@ -101,7 +101,7 @@ const catDeck = [
   {
     name: "Chonk Cat",
     cuteness: 9,
-    stealth: 6,
+    stealth: 7,
     agility: 3,
     image:
       "https://ik.imagekit.io/cdrmfch7b/Chonk_cat.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1675028922533",
@@ -109,7 +109,7 @@ const catDeck = [
 
   {
     name: "Thief Cat",
-    cuteness: 7,
+    cuteness: 6,
     stealth: 10,
     agility: 9,
     image:
@@ -117,8 +117,8 @@ const catDeck = [
   },
 
   {
-    name: "Bug-eyed Cat",
-    cuteness: 6,
+    name: "Zoomies Cat",
+    cuteness: 5,
     stealth: 8,
     agility: 10,
     image:
