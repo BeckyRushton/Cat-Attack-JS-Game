@@ -38,6 +38,11 @@ body {
   border-radius: 5px;
 }
 
+#resetGame:hover {
+  background-color: rgb(30, 83, 30);
+  transition: 200ms;
+}
+
 .cardTable {
   background-color: rgb(121, 116, 128);
   margin: 2%;
@@ -107,6 +112,11 @@ body {
   box-shadow: black 5px 5px 5px;
 }
 
+.catCardUser__card:hover {
+  box-shadow: rgb(66, 43, 114) 5px 5px 8px;
+  transition: 200ms;
+}
+
 .catCardComputer {
   grid-area: computer;
   display: flex;
@@ -128,6 +138,11 @@ body {
   font-size: 3.5rem;
   padding: 14px;
   box-shadow: black 5px 5px 5px;
+}
+
+.catCardComputer__card:hover {
+  box-shadow: rgb(66, 43, 114) 5px 5px 8px;
+  transition: 200ms;
 }
 
 .catCardDivide {
@@ -163,6 +178,11 @@ body {
   cursor: pointer;
   box-shadow: black 5px 5px 5px;
   border-radius: 5px;
+}
+
+#duel:hover {
+  background-color: rgb(110, 12, 12);
+  transition: 200ms;
 }
 
 .catCard {
