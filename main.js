@@ -1,5 +1,4 @@
 import catDeck from "./deck.js";
-const catDeckAll = document.querySelector(".catDeckAll");
 const computerCard = document.querySelector(".catCardComputer__card");
 const userCard = document.querySelector(".catCardUser__card");
 
@@ -17,19 +16,12 @@ const makeCard = (catCharacters) => {
   return cardHTML;
 };
 
-// This function populates the card onto the page -- currently set to all
-const populatePage = () => {
-  catDeckAll.innerHTML = catDeck
-    .map((character) => makeCard(character))
-    .join("");
-};
-populatePage();
-
 // Function to populate the user card with a random card from deck array
+// Will also need to choose 2 from deck and not populate the computer
+// card until duel button is pressed
 const handleChooseCard = () => {
-  const randomCard = Math.random() * catDeckAll.length;
-  const item = randomCard[randomIndex];
-  userCard.innerHTML = item.map((character) => makeCard(character)).join("");
-  return randomCard;
+  const randomCard = catDeck[(Math.random() * catDeck.length) | 0];
+  console.log(randomCard);
+  userCard.innerHTML = makeCard(randomCard);
 };
 userCard.addEventListener("click", handleChooseCard);
