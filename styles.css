@@ -20,6 +20,7 @@ body {
 .gameName__title {
   font-size: 5rem;
   margin-top: 50px;
+  font-weight: bold;
 }
 .gameName__tagline {
   font-size: 2rem;
