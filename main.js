@@ -24,3 +24,12 @@ const populatePage = () => {
     .join("");
 };
 populatePage();
+
+// Function to populate the user card with a random card from deck array
+const handleChooseCard = () => {
+  const randomCard = Math.random() * catDeckAll.length;
+  const item = randomCard[randomIndex];
+  userCard.innerHTML = item.map((character) => makeCard(character)).join("");
+  return randomCard;
+};
+userCard.addEventListener("click", handleChooseCard);
