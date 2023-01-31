@@ -196,40 +196,26 @@ body {
     text-align: start;
   }
 }
-
+// ------------------------- Larger screens -----------------------------
 @media screen and (min-width: 768px) {
   .gameName {
-    font-family: $main-font;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    gap: 10px;
+    gap: 20px;
     &__title {
-      font-size: 6rem;
-      margin-top: 50px;
+      font-size: 7rem;
+      margin-top: 70px;
     }
     &__tagline {
-      font-size: 2rem;
-      margin-bottom: 20px;
+      font-size: 3rem;
     }
   }
   #resetGame {
-    font-size: 1.3rem;
-    padding: 10px;
-    width: 10rem;
-    background-color: rgb(25, 141, 21);
-    font-family: $main-font;
-    color: white;
-    cursor: pointer;
-    box-shadow: black 5px 5px 5px;
-    border-radius: 5px;
+    font-size: 1.5rem;
+    padding: 20px;
+    width: 13rem;
   }
 
   .cardTable {
-    background-color: $table-colour;
-    margin: 5%;
+    margin: 3%;
     display: grid;
     border-radius: 5px;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -241,83 +227,38 @@ body {
   }
 
   .catStats {
-    font-family: $text-font;
-    color: white;
-    font-size: 1rem;
+    font-size: 1.2rem;
     grid-area: stats;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: flex-start;
-    margin: 30px;
-    padding: 20px;
-    background-color: $options-colour;
-    border-radius: 5px;
+    margin: 25px;
   }
 
   .computerWaiting {
-    font-family: $text-font;
-    color: white;
-    font-size: 1rem;
+    font-size: 1.2rem;
     grid-area: waiting;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: $options-colour;
-    margin: 30px;
-    border-radius: 5px;
+    margin: 25px;
   }
 
   .catCardUser {
     grid-area: user;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 10%;
 
     &__card {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      height: 350px;
-      width: 200px;
-      background-color: $card-colour;
-      font-family: $main-font;
-      border-radius: 5px;
-      color: white;
-      font-size: 2rem;
-      padding: 20px;
-      cursor: pointer;
-      box-shadow: black 5px 5px 5px;
+      height: 400px;
+      width: 250px;
+      font-size: 2.5rem;
     }
   }
   .catCardComputer {
     grid-area: computer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 10%;
 
     &__card {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      height: 350px;
-      width: 200px;
-      background-color: $card-colour;
-      font-family: $main-font;
-      border-radius: 5px;
-      color: white;
-      font-size: 3.5rem;
-      padding: 20px;
-      box-shadow: black 5px 5px 5px;
+      height: 400px;
+      width: 250px;
+      font-size: 4rem;
     }
   }
   .catCardDivide {
     grid-area: nill;
-    font-size: 3rem;
+    font-size: 4rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -325,56 +266,19 @@ body {
   }
 
   .versus {
-    font-size: 3rem;
-    font-family: $main-font;
-    color: white;
+    font-size: 4rem;
   }
   .duelButton {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     grid-area: duel;
   }
 
   #duel {
-    padding: 20px;
-    width: 10rem;
-    background-color: rgb(163, 44, 44);
-    color: white;
-    font-family: $main-font;
-    text-align: center;
-    font-size: 1.7rem;
-    cursor: pointer;
-    box-shadow: black 5px 5px 5px;
-    border-radius: 5px;
+    width: 8rem;
+    font-size: 2rem;
   }
 
-  .catCard {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    font-family: $text-font;
-    color: white;
-    background-color: $card-colour;
-    height: 100%;
-    width: 100%;
-    border-radius: 5px;
-    gap: 5%;
-
-    &__image {
-      width: 90%;
-      border-radius: 5px;
-    }
-    &__stats {
-      width: 90%;
-      background-color: $second-card-colour;
-      color: white;
-      border-radius: 5px;
-      padding: 10px;
-      font-size: 1rem;
-      text-align: start;
-    }
+  .catCard__stats {
+    padding: 10px;
+    font-size: 1.1rem;
   }
 }
