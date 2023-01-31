@@ -35,7 +35,7 @@ body {
 }
 
 .cardTable {
-  background-color: rgb(127, 137, 148);
+  background-color: rgb(74, 74, 87);
   margin: 5%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -54,7 +54,7 @@ body {
   align-items: flex-start;
   margin: 40px;
   padding: 20px;
-  background-color: rgb(58, 64, 70);
+  background-color: rgb(49, 47, 70);
   border-radius: 5px;
 }
 
@@ -66,37 +66,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(58, 64, 70);
+  background-color: rgb(49, 47, 70);
   margin: 40px;
   border-radius: 5px;
-}
-
-.catCard {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  font-family: "Poppins", sans-serif;
-  color: white;
-  background-color: rgb(20, 18, 29);
-  height: 500px;
-  width: 300px;
-  padding: 20px;
-  border-radius: 5px;
-  margin: 20px;
-  gap: 20px;
-}
-.catCard__image {
-  width: 90%;
-  border-radius: 5px;
-}
-.catCard__stats {
-  width: 90%;
-  background-color: rgb(44, 40, 74);
-  color: white;
-  border-radius: 5px;
-  padding: 10px;
-  font-size: 1.1rem;
 }
 
 .catCardUser {
@@ -104,7 +76,20 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+}
+.catCardUser__card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 400px;
+  width: 250px;
+  background-color: rgb(20, 18, 29);
+  font-family: "Solitreo", sans-serif;
+  border-radius: 5px;
+  color: white;
+  font-size: 2rem;
+  padding: 20px;
 }
 
 .catCardComputer {
@@ -112,11 +97,20 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.catCardComputer__card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  width: 100%;
+  height: 400px;
+  width: 250px;
+  background-color: rgb(20, 18, 29);
   font-family: "Solitreo", sans-serif;
-  font-size: 5rem;
+  border-radius: 5px;
   color: white;
+  font-size: 3.5rem;
+  padding: 20px;
 }
 
 .catCardDivide {
@@ -150,4 +144,34 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.catCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  background-color: rgb(20, 18, 29);
+  height: 500px;
+  width: 300px;
+  padding: 20px;
+  border-radius: 5px;
+  margin: 20px;
+  gap: 20px;
+}
+.catCard__image {
+  width: 90%;
+  border-radius: 5px;
+}
+.catCard__stats {
+  width: 90%;
+  background-color: rgb(44, 40, 74);
+  color: white;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1.1rem;
 }/*# sourceMappingURL=styles.css.map */
