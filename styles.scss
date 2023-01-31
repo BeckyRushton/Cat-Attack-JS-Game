@@ -35,7 +35,7 @@ body {
 }
 
 .cardTable {
-  background-color: rgb(74, 74, 87);
+  background-color: rgb(118, 118, 138);
   margin: 5%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -119,8 +119,13 @@ body {
   grid-area: nill;
   font-size: 3rem;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.versus {
+  font-size: 3rem;
   font-family: $main-font;
   color: white;
 }
