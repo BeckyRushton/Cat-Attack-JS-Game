@@ -18,7 +18,7 @@ body {
   align-items: center;
 }
 .gameName__title {
-  font-size: 6rem;
+  font-size: 5rem;
   margin-top: 50px;
 }
 .gameName__tagline {
@@ -29,6 +29,7 @@ body {
 #resetGame {
   font-size: 1.3rem;
   padding: 10px;
+  margin-bottom: 20px;
   width: 10rem;
   background-color: rgb(25, 141, 21);
   color: white;
@@ -39,26 +40,26 @@ body {
 
 .cardTable {
   background-color: rgb(121, 116, 128);
-  margin: 3%;
+  margin: 2%;
   display: grid;
   border-radius: 5px;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-areas: "user user user nill computer computer computer" "user user user nill computer computer computer" "stats stats stats duel waiting waiting waiting";
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "user user user nill computer computer computer" "user user user nill computer computer computer" "duel duel duel duel duel duel duel " "stats stats stats stats waiting waiting waiting";
 }
 
 .catStats {
   font-family: "Poppins", sans-serif;
   color: white;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   grid-area: stats;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: flex-start;
-  margin: 40px;
+  margin: 20px;
   padding: 20px;
-  background-color: rgb(72, 72, 133);
+  background-color: rgb(77, 77, 122);
   border-radius: 5px;
 }
 
@@ -71,13 +72,14 @@ body {
 .computerWaiting {
   font-family: "Poppins", sans-serif;
   color: white;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   grid-area: waiting;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(72, 72, 133);
-  margin: 40px;
+  background-color: rgb(77, 77, 122);
+  margin: 20px;
+  padding: 20px;
   border-radius: 5px;
 }
 
@@ -86,20 +88,21 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 10%;
 }
 .catCardUser__card {
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  height: 400px;
-  width: 250px;
+  height: 350px;
+  width: 200px;
   background-color: rgb(25, 24, 26);
   font-family: "Solitreo", sans-serif;
   border-radius: 5px;
   color: white;
   font-size: 2rem;
-  padding: 20px;
+  padding: 14px;
   cursor: pointer;
   box-shadow: black 5px 5px 5px;
 }
@@ -109,20 +112,21 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 10%;
 }
 .catCardComputer__card {
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  height: 400px;
-  width: 250px;
+  height: 350px;
+  width: 200px;
   background-color: rgb(25, 24, 26);
   font-family: "Solitreo", sans-serif;
   border-radius: 5px;
   color: white;
   font-size: 3.5rem;
-  padding: 20px;
+  padding: 14px;
   box-shadow: black 5px 5px 5px;
 }
 
@@ -131,12 +135,12 @@ body {
   font-size: 3rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
 }
 
 .versus {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-family: "Solitreo", sans-serif;
   color: white;
 }
@@ -151,11 +155,11 @@ body {
 
 #duel {
   padding: 20px;
-  width: 13rem;
+  width: 10rem;
   background-color: rgb(163, 44, 44);
   color: white;
   font-family: "Solitreo", sans-serif;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   cursor: pointer;
   box-shadow: black 5px 5px 5px;
   border-radius: 5px;
@@ -172,7 +176,6 @@ body {
   height: 100%;
   width: 100%;
   border-radius: 5px;
-  gap: 5%;
 }
 .catCard__image {
   width: 90%;
@@ -184,6 +187,175 @@ body {
   color: white;
   border-radius: 5px;
   padding: 10px;
-  font-size: 1.1rem;
+  font-size: 1rem;
   text-align: start;
+}
+
+@media screen and (min-width: 768px) {
+  .gameName {
+    font-family: "Solitreo", sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+  }
+  .gameName__title {
+    font-size: 6rem;
+    margin-top: 50px;
+  }
+  .gameName__tagline {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  #resetGame {
+    font-size: 1.3rem;
+    padding: 10px;
+    width: 10rem;
+    background-color: rgb(25, 141, 21);
+    font-family: "Solitreo", sans-serif;
+    color: white;
+    cursor: pointer;
+    box-shadow: black 5px 5px 5px;
+    border-radius: 5px;
+  }
+  .cardTable {
+    background-color: rgb(121, 116, 128);
+    margin: 5%;
+    display: grid;
+    border-radius: 5px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "user user user nill computer computer computer" "user user user nill computer computer computer" "stats stats stats duel waiting waiting waiting";
+  }
+  .catStats {
+    font-family: "Poppins", sans-serif;
+    color: white;
+    font-size: 1rem;
+    grid-area: stats;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin: 30px;
+    padding: 20px;
+    background-color: rgb(77, 77, 122);
+    border-radius: 5px;
+  }
+  .computerWaiting {
+    font-family: "Poppins", sans-serif;
+    color: white;
+    font-size: 1rem;
+    grid-area: waiting;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(77, 77, 122);
+    margin: 30px;
+    border-radius: 5px;
+  }
+  .catCardUser {
+    grid-area: user;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10%;
+  }
+  .catCardUser__card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 350px;
+    width: 200px;
+    background-color: rgb(25, 24, 26);
+    font-family: "Solitreo", sans-serif;
+    border-radius: 5px;
+    color: white;
+    font-size: 2rem;
+    padding: 20px;
+    cursor: pointer;
+    box-shadow: black 5px 5px 5px;
+  }
+  .catCardComputer {
+    grid-area: computer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10%;
+  }
+  .catCardComputer__card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 350px;
+    width: 200px;
+    background-color: rgb(25, 24, 26);
+    font-family: "Solitreo", sans-serif;
+    border-radius: 5px;
+    color: white;
+    font-size: 3.5rem;
+    padding: 20px;
+    box-shadow: black 5px 5px 5px;
+  }
+  .catCardDivide {
+    grid-area: nill;
+    font-size: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .versus {
+    font-size: 3rem;
+    font-family: "Solitreo", sans-serif;
+    color: white;
+  }
+  .duelButton {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-area: duel;
+  }
+  #duel {
+    padding: 20px;
+    width: 10rem;
+    background-color: rgb(163, 44, 44);
+    color: white;
+    font-family: "Solitreo", sans-serif;
+    text-align: center;
+    font-size: 1.7rem;
+    cursor: pointer;
+    box-shadow: black 5px 5px 5px;
+    border-radius: 5px;
+  }
+  .catCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: "Poppins", sans-serif;
+    color: white;
+    background-color: rgb(25, 24, 26);
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    gap: 5%;
+  }
+  .catCard__image {
+    width: 90%;
+    border-radius: 5px;
+  }
+  .catCard__stats {
+    width: 90%;
+    background-color: rgb(65, 65, 65);
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+    text-align: start;
+  }
 }/*# sourceMappingURL=styles.css.map */
