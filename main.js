@@ -132,12 +132,6 @@ const handleDuel = () => {
   computerCard.innerHTML = makeCard(computerCardObj);
 
   if (userCardObj[method] > computerCardObj[method]) {
-    jsConfetti.addConfetti({
-      confettiRadius: 20,
-      emojis: ["🎉", "🐱", "✨", "💸", "🐾"],
-      emojiSize: 50,
-      confettiNumber: 150,
-    });
     computerText.innerText = "I'll get you next time!";
     resultMessageWinner.innerText = "Winner!";
     console.log("Winner!");
@@ -159,10 +153,23 @@ const handleDuel = () => {
   if (userScore == 5 || computerScore == 5) {
     duelButton.innerText = "New Game";
   }
+  if (userScore == 5) {
+    resultMessageWinner.innerText = "Congratulations, you won!";
+    jsConfetti.addConfetti({
+      confettiRadius: 20,
+      emojis: ["🎉", "🐱", "✨", "💸", "🐾"],
+      emojiSize: 50,
+      confettiNumber: 150,
+    });
+  } else if (computerScore == 5) {
+    resultMessageLoser.innerText = "Better luck next time!";
+    jsConfetti.addConfetti({
+      confettiRadius: 20,
+      emojis: ["😭", "👎", "💔", "😼", "❌"],
+      emojiSize: 50,
+      confettiNumber: 150,
+    });
+  }
 };
 
 duelButton.addEventListener("click", handleDuel);
-
-// const newGame = () => {
-//   if (userScore == 5)
-// }

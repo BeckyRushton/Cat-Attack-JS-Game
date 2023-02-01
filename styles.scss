@@ -34,7 +34,7 @@ body {
 .resultMessage {
   font-family: $main-font;
   font-weight: bold;
-  font-size: 4rem;
+  font-size: 3rem;
   height: 100px;
 
   &__winner {
@@ -74,8 +74,8 @@ body {
   grid-template-areas:
     "user user user nill computer computer computer"
     "user user user nill computer computer computer"
-    "duel duel duel duel duel duel duel "
-    "stats stats stats stats waiting waiting waiting";
+    "stats stats stats nill waiting waiting waiting"
+    "duel duel duel duel duel duel duel ";
 }
 
 .catStats {
@@ -100,7 +100,7 @@ body {
 .computerWaiting {
   font-family: $text-font;
   color: white;
-  font-size: 1rem;
+  font-size: 1.2rem;
   grid-area: waiting;
   display: flex;
   justify-content: center;
@@ -171,7 +171,7 @@ body {
   font-size: 3rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
 }
 
@@ -190,17 +190,17 @@ body {
 
 #duel {
   padding: 20px;
-  width: 10rem;
-  background-color: rgb(163, 44, 44);
+  width: 15rem;
+  background-color: rgb(167, 151, 10);
   color: white;
   font-family: $main-font;
-  font-size: 1.5rem;
+  font-size: 2rem;
   cursor: pointer;
   box-shadow: black 5px 5px 5px;
   border-radius: 5px;
 }
 #duel:hover {
-  background-color: rgb(110, 12, 12);
+  background-color: rgb(170, 105, 20);
   transition: 200ms;
 }
 
@@ -240,7 +240,7 @@ body {
       margin-top: 70px;
     }
     &__tagline {
-      font-size: 3rem;
+      font-size: 2.5rem;
     }
   }
 
