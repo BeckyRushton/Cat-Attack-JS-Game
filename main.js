@@ -1,5 +1,4 @@
 import catDeck from "./deck.js";
-const reset = document.querySelector("#resetGame");
 const computerCard = document.querySelector(".catCardComputer__card");
 const userCard = document.querySelector(".catCardUser__card");
 const duelButton = document.querySelector("#duel");
@@ -10,10 +9,14 @@ const computerText = document.querySelector(".computerWaiting");
 const resultMessageWinner = document.querySelector(".resultMessage__winner");
 const resultMessageDraw = document.querySelector(".resultMessage__draw");
 const resultMessageLoser = document.querySelector(".resultMessage__loser");
+const userScoreDisplay = document.querySelector(".scores__user");
+const computerScoreDisplay = document.querySelector(".scores__computer");
 const jsConfetti = new JSConfetti();
 let cardSelected = false;
 let userCardObj = null;
 let computerCardObj = null;
+let userScore = 0;
+let computerScore = 0;
 
 // This function creates a card using the data from the cat deck
 const makeCard = (catCharacters) => {
@@ -49,7 +52,8 @@ const handleChooseCard = () => {
       return true;
     }
   });
-  const randomCardComputer = newCatDeck[(Math.random() * catDeck.length) | 0];
+  const randomCardComputer =
+    newCatDeck[(Math.random() * (catDeck.length - 1)) | 0];
   computerCardObj = randomCardComputer;
   console.log(randomCardComputer);
 
@@ -73,8 +77,39 @@ cutenessCheckBox.addEventListener("click", handleSelectAttack);
 stealthCheckBox.addEventListener("click", handleSelectAttack);
 agilityCheckBox.addEventListener("click", handleSelectAttack);
 
+// New round function that keeps the score but resets the table
+
+const returnToDefault = () => {
+  resultMessageWinner.innerText = "";
+  resultMessageDraw.innerText = "";
+  resultMessageLoser.innerText = "";
+  userCard.innerText = "Click to choose a card";
+  userCardObj = null;
+  computerCard.innerText = "Cat Attack";
+  computerCardObj = null;
+  cardSelected = false;
+  computerText.innerText = "Computer is waiting...";
+  cutenessCheckBox.checked = false;
+  stealthCheckBox.checked = false;
+  agilityCheckBox.checked = false;
+  duelButton.innerText = "Duel";
+};
+
 // Function to compare the user's chosen attack method with computers stat
 const handleDuel = () => {
+  if (duelButton.innerText === "Next Round") {
+    returnToDefault();
+    return true;
+  }
+  if (duelButton.innerText === "New Game") {
+    returnToDefault();
+    userScore = 0;
+    computerScore = 0;
+    userScoreDisplay.innerText = "Score: " + userScore;
+    computerScoreDisplay.innerText = "Score: " + computerScore;
+    return true;
+  }
+
   if (!cardSelected) {
     alert("Please select your card!");
     return false;
@@ -99,13 +134,15 @@ const handleDuel = () => {
   if (userCardObj[method] > computerCardObj[method]) {
     jsConfetti.addConfetti({
       confettiRadius: 20,
-      emojis: ["🎉", "🐱", "💎", "✨", "💸", "🐾"],
+      emojis: ["🎉", "🐱", "✨", "💸", "🐾"],
       emojiSize: 50,
       confettiNumber: 150,
     });
     computerText.innerText = "I'll get you next time!";
     resultMessageWinner.innerText = "Winner!";
     console.log("Winner!");
+    userScore = userScore + 1;
+    userScoreDisplay.innerText = "Score: " + userScore;
   } else if (userCardObj[method] == computerCardObj[method]) {
     computerText.innerText = "Good, but not good enough!";
     resultMessageDraw.innerText = "It's a draw...";
@@ -114,14 +151,18 @@ const handleDuel = () => {
     computerText.innerText = "Mwhahahaha!";
     resultMessageLoser.innerText = "Loser!";
     console.log("Loser!");
+    computerScore = computerScore + 1;
+    computerScoreDisplay.innerText = "Score: " + computerScore;
+  }
+  duelButton.innerText = "Next Round";
+
+  if (userScore == 5 || computerScore == 5) {
+    duelButton.innerText = "New Game";
   }
 };
 
 duelButton.addEventListener("click", handleDuel);
 
-// Function to reset game page
-
-// const handleReset = (event) => {
-//   const
-// cardSelected = false
-// };
+// const newGame = () => {
+//   if (userScore == 5)
+// }

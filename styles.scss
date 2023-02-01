@@ -52,7 +52,16 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 2px solid black;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+
+  &__user {
+    margin-left: 20%;
+  }
+  &__computer {
+    margin-right: 20%;
+  }
 }
 
 .cardTable {
