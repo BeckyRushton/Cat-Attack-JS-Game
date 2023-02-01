@@ -1,5 +1,6 @@
-import catDeck from "./deck.js";
-const reset = document.querySelector("#resetGame");
+import catDeck from "../deck.js";
+// import "./styles.scss";
+// import confetti from "canvas-confetti";
 const computerCard = document.querySelector(".catCardComputer__card");
 const userCard = document.querySelector(".catCardUser__card");
 const duelButton = document.querySelector("#duel");
@@ -10,10 +11,12 @@ const computerText = document.querySelector(".computerWaiting");
 const resultMessageWinner = document.querySelector(".resultMessage__winner");
 const resultMessageDraw = document.querySelector(".resultMessage__draw");
 const resultMessageLoser = document.querySelector(".resultMessage__loser");
+// import catImage from "../src/assets/images/pixel-cat-icon.png";
 let cardSelected = false;
 let userCardObj = null;
 let computerCardObj = null;
-
+// const pixelCat = document.querySelector("#pixelCat");
+// pixelCat.src = catImage;
 // This function creates a card using the data from the cat deck
 const makeCard = (catCharacters) => {
   const cardHTML = `<div class="catCard">
@@ -29,8 +32,7 @@ const makeCard = (catCharacters) => {
 };
 
 // Function to populate the user card with a random card from deck array
-// Will also need to choose 2 from deck and not populate the computer
-// card until duel button is pressed
+// as well as the computer's card (hidden until duel button is pressed)
 const handleChooseCard = () => {
   if (cardSelected) {
     return false;
@@ -93,9 +95,21 @@ const handleDuel = () => {
   console.log(userCardObj[method]);
   console.log(computerCardObj[method]);
 
-  computerCard.innerHTML = makeCard(computerCardObj);
+  // const confettiOptions = {
+  //   gravity: 1.5,
+  //   angle: 90,
+  //   spread: 100,
+  //   ticks: 500,
+  //   shapes: ["circle"],
+  //   colors: ["#a44444", "#a9d9d9"],
+  //   particleCount: 1000,
+  //   scalar: 1,
+  //   drift: 0.5,
+  // };
 
+  computerCard.innerHTML = makeCard(computerCardObj);
   if (userCardObj[method] > computerCardObj[method]) {
+    // confetti(confettiOptions);
     computerText.innerText = "I'll get you next time!";
     resultMessageWinner.innerText = "Winner!";
     console.log("Winner!");
@@ -114,7 +128,9 @@ duelButton.addEventListener("click", handleDuel);
 
 // Function to reset game page
 
-// const handleReset = (event) => {
-//   const
-// cardSelected = false
+// const handleReset = () => {
+//   duelButton.innerText = "New Game";
+//   cardSelected = false;
 // };
+
+// duelButton.addEventListener("click", handleReset);
