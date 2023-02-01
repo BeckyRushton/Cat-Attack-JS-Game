@@ -7,6 +7,9 @@ const cutenessCheckBox = document.querySelector("#stat01");
 const stealthCheckBox = document.querySelector("#stat02");
 const agilityCheckBox = document.querySelector("#stat03");
 const computerText = document.querySelector(".computerWaiting");
+const resultMessageWinner = document.querySelector(".resultMessage__winner");
+const resultMessageDraw = document.querySelector(".resultMessage__draw");
+const resultMessageLoser = document.querySelector(".resultMessage__loser");
 let cardSelected = false;
 let userCardObj = null;
 let computerCardObj = null;
@@ -94,24 +97,23 @@ const handleDuel = () => {
 
   if (userCardObj[method] > computerCardObj[method]) {
     computerText.innerText = "I'll get you next time!";
+    resultMessageWinner.innerText = "Winner!";
     console.log("Winner!");
   } else if (userCardObj[method] == computerCardObj[method]) {
     computerText.innerText = "Good, but not good enough!";
+    resultMessageDraw.innerText = "It's a draw...";
     console.log("Draw!");
   } else {
     computerText.innerText = "Mwhahahaha!";
+    resultMessageLoser.innerText = "Loser!";
     console.log("Loser!");
   }
 };
 
 duelButton.addEventListener("click", handleDuel);
-//
-//   const userCat = randomCardUser;
-//   const computerCat = randomCardComputer;
-//
-// ;
 
 // Function to reset game page
+
 // const handleReset = (event) => {
 //   const
 // cardSelected = false

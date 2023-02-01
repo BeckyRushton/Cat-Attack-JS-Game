@@ -28,23 +28,24 @@ body {
   }
   &__tagline {
     font-size: 2rem;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 }
-#resetGame {
-  font-size: 1.3rem;
-  padding: 10px;
-  margin-bottom: 20px;
-  width: 10rem;
-  background-color: rgb(25, 141, 21);
-  color: white;
-  cursor: pointer;
-  box-shadow: black 5px 5px 5px;
-  border-radius: 5px;
-}
-#resetGame:hover {
-  background-color: rgb(30, 83, 30);
-  transition: 200ms;
+.resultMessage {
+  font-family: $main-font;
+  font-weight: bold;
+  font-size: 4rem;
+  height: 100px;
+
+  &__winner {
+    color: green;
+  }
+  &__draw {
+    color: orange;
+  }
+  &__loser {
+    color: red;
+  }
 }
 
 .cardTable {
@@ -212,24 +213,6 @@ body {
     font-size: 1rem;
     text-align: start;
   }
-  #winner {
-    display: flex;
-    font-family: $main-font;
-    font-size: 4rem;
-    color: green;
-  }
-  #loser {
-    display: flex;
-    font-family: $main-font;
-    font-size: 4rem;
-    color: red;
-  }
-  #draw {
-    display: flex;
-    font-family: $main-font;
-    font-size: 3rem;
-    color: orange;
-  }
 }
 
 // ------------------------- Larger screens -----------------------------
@@ -243,11 +226,6 @@ body {
     &__tagline {
       font-size: 3rem;
     }
-  }
-  #resetGame {
-    font-size: 1.5rem;
-    padding: 20px;
-    width: 13rem;
   }
 
   .cardTable {
