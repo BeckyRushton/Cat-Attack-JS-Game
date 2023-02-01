@@ -98,7 +98,10 @@ const handleDuel = () => {
 
   if (userCardObj[method] > computerCardObj[method]) {
     jsConfetti.addConfetti({
+      confettiRadius: 20,
       emojis: ["🎉", "🐱", "💎", "✨", "💸", "🐾"],
+      emojiSize: 50,
+      confettiNumber: 150,
     });
     computerText.innerText = "I'll get you next time!";
     resultMessageWinner.innerText = "Winner!";
