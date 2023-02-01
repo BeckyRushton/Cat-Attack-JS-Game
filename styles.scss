@@ -47,6 +47,13 @@ body {
     color: red;
   }
 }
+.scores {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid black;
+}
 
 .cardTable {
   background-color: $table-colour;

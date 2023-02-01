@@ -10,6 +10,7 @@ const computerText = document.querySelector(".computerWaiting");
 const resultMessageWinner = document.querySelector(".resultMessage__winner");
 const resultMessageDraw = document.querySelector(".resultMessage__draw");
 const resultMessageLoser = document.querySelector(".resultMessage__loser");
+const jsConfetti = new JSConfetti();
 let cardSelected = false;
 let userCardObj = null;
 let computerCardObj = null;
@@ -94,6 +95,10 @@ const handleDuel = () => {
   console.log(computerCardObj[method]);
 
   computerCard.innerHTML = makeCard(computerCardObj);
+
+  jsConfetti.addConfetti({
+    emojis: ["🎉", "🐱", "💎", "✨", "💸", "🐾"],
+  });
 
   if (userCardObj[method] > computerCardObj[method]) {
     computerText.innerText = "I'll get you next time!";
