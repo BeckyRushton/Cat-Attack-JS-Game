@@ -96,11 +96,10 @@ const handleDuel = () => {
 
   computerCard.innerHTML = makeCard(computerCardObj);
 
-  jsConfetti.addConfetti({
-    emojis: ["🎉", "🐱", "💎", "✨", "💸", "🐾"],
-  });
-
   if (userCardObj[method] > computerCardObj[method]) {
+    jsConfetti.addConfetti({
+      emojis: ["🎉", "🐱", "💎", "✨", "💸", "🐾"],
+    });
     computerText.innerText = "I'll get you next time!";
     resultMessageWinner.innerText = "Winner!";
     console.log("Winner!");
