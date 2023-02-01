@@ -14,42 +14,51 @@
       <div class="gameName__tagline">The highest scoring cat wins!</div>
       <button id="resetGame">New Game</button>
     </header>
-    
-      <div class="cardTable">
-        <div class="catCardUser">
-          <div class="catCardUser__card">Click to choose a card</div> 
-        </div>
-        <div class="catCardDivide">
-          <div class="catIcon">
-            <img src="./icons8-pixel-cat-96.png" alt="pixel cat icon">
-          </div> 
-          <div class="versus">vs</div> 
-        </div>
-        <div class="catCardComputer">
-          <div class="catCardComputer__card">Cat Attack</div> </div>
 
-        <div class="catStats"> 
-          <div>Choose method of attack:</div> 
-          <div>
-            <div class="catStats__one">
-            <label for="stat01">Cuteness<label>
-            <input id="stat01" type="checkbox" />
-          </div>
-          <div class="catStats__two">
-            <label for="stat02">Stealth <label>
-            <input id="stat02" type="checkbox" />
-          </div>
-          <div class="catStats__three">
-            <label for="stat03">Agility<label>
-            <input id="stat03" type="checkbox" />
-          </div>
-        </div>
-          
-        </div>
-        <div class="duelButton">
-          <button id="duel">Duel</button>
-        </div>
-        <div class="computerWaiting">Computer is waiting...</div>
+    <div class="cardTable">
+      <div class="catCardUser">
+        <div class="catCardUser__card">Click to choose a card</div>
       </div>
+
+      <div class="catCardDivide">
+        <div class="catIcon">
+          <img src="./icons8-pixel-cat-96.png" alt="pixel cat icon" />
+        </div>
+
+        <div class="versus">vs</div>
+      </div>
+
+      <div class="catCardComputer">
+        <div class="catCardComputer__card">Cat Attack</div>
+      </div>
+
+      <div class="catStats">
+        <div>Choose method of attack:</div>
+        <div class="catStats__one">
+          <label for="stat01">Cuteness</label>
+          <input id="stat01" type="checkbox" />
+        </div>
+
+        <div class="catStats__two">
+          <label for="stat02">Stealth </label>
+          <input id="stat02" type="checkbox" />
+        </div>
+
+        <div class="catStats__three">
+          <label for="stat03">Agility</label>
+          <input id="stat03" type="checkbox" />
+        </div>
+      </div>
+
+      <div class="duelButton">
+        <button id="duel">Duel</button>
+      </div>
+
+      <div class="computerWaiting">Computer is waiting...</div>
+
+      <div class="winner" hidden>Winner!</div>
+      <div class="loser" hidden>Loser!</div>
+      <div class="draw" hidden>It's a draw...</div>
+    </div>
   </body>
 </html>

@@ -2,6 +2,13 @@ import catDeck from "./deck.js";
 const reset = document.querySelector("#resetGame");
 const computerCard = document.querySelector(".catCardComputer__card");
 const userCard = document.querySelector(".catCardUser__card");
+const duelButton = document.querySelector("#duel");
+const cutenessCheckBox = document.querySelector("#stat01");
+const stealthCheckBox = document.querySelector("#stat02");
+const agilityCheckBox = document.querySelector("#stat03");
+let cardSelected = false;
+let userCardObj = null;
+let computerCardObj = null;
 
 // This function creates a card using the data from the cat deck
 const makeCard = (catCharacters) => {
@@ -21,30 +28,87 @@ const makeCard = (catCharacters) => {
 // Will also need to choose 2 from deck and not populate the computer
 // card until duel button is pressed
 const handleChooseCard = () => {
+  if (cardSelected) {
+    return false;
+  }
+
   const randomCardUser = catDeck[(Math.random() * catDeck.length) | 0];
+  userCardObj = randomCardUser;
   console.log(randomCardUser);
-  const randomCardComputer = catDeck[(Math.random() * catDeck.length) | 0];
-  console.log(randomCardComputer);
   userCard.innerHTML = makeCard(randomCardUser);
-  computerCard.innerHTML = makeCard(randomCardComputer);
+
+  const newCatDeck = catDeck.filter((cat) => {
+    if (cat.name === randomCardUser.name) {
+      return false;
+    } else {
+      return true;
+    }
+  });
+  const randomCardComputer = newCatDeck[(Math.random() * catDeck.length) | 0];
+  computerCardObj = randomCardComputer;
+  console.log(randomCardComputer);
+
+  cardSelected = true;
 };
 userCard.addEventListener("click", handleChooseCard);
 
+// Function to check that you've only ticked one box
+
+const handleSelectAttack = (event) => {
+  const attackMethod = event.target;
+  console.log(attackMethod);
+
+  cutenessCheckBox.checked = false;
+  stealthCheckBox.checked = false;
+  agilityCheckBox.checked = false;
+  attackMethod.checked = true;
+};
+
+cutenessCheckBox.addEventListener("click", handleSelectAttack);
+stealthCheckBox.addEventListener("click", handleSelectAttack);
+agilityCheckBox.addEventListener("click", handleSelectAttack);
+
 // Function to compare the user's chosen attack method with computers stat
-// const handleDuel = (event) => {
-//   const attack = event.target.value;
+const handleDuel = () => {
+  if (!cardSelected) {
+    alert("Please select your card!");
+    return false;
+  }
+  let method = null;
+  if (cutenessCheckBox.checked) {
+    method = "cuteness";
+  } else if (stealthCheckBox.checked) {
+    method = "stealth";
+  } else if (agilityCheckBox.checked) {
+    method = "agility";
+  } else {
+    alert("Please choose an attack method!");
+    return false;
+  }
+  console.log(method);
+  console.log(userCardObj[method]);
+  console.log(computerCardObj[method]);
+
+  computerCard.innerHTML = makeCard(computerCardObj);
+
+  if (userCardObj[method] > computerCardObj[method]) {
+    console.log("Winner!");
+  } else if (userCardObj[method] == computerCardObj[method]) {
+    console.log("Draw!");
+  } else {
+    console.log("Loser!");
+  }
+};
+
+duelButton.addEventListener("click", handleDuel);
+//
 //   const userCat = randomCardUser;
 //   const computerCat = randomCardComputer;
-//   if (userCat > computerCard) {
-//     return "winner";
-//   } else if (userCat == computerCat) {
-//     return "draw";
-//   } else {
-//     return "lost";
-//   }
-// };
+//
+// ;
 
 // Function to reset game page
 // const handleReset = (event) => {
 //   const
+// cardSelected = false
 // };
