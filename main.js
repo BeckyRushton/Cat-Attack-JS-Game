@@ -6,6 +6,7 @@ const duelButton = document.querySelector("#duel");
 const cutenessCheckBox = document.querySelector("#stat01");
 const stealthCheckBox = document.querySelector("#stat02");
 const agilityCheckBox = document.querySelector("#stat03");
+const computerText = document.querySelector(".computerWaiting");
 let cardSelected = false;
 let userCardObj = null;
 let computerCardObj = null;
@@ -92,10 +93,13 @@ const handleDuel = () => {
   computerCard.innerHTML = makeCard(computerCardObj);
 
   if (userCardObj[method] > computerCardObj[method]) {
+    computerText.innerText = "I'll get you next time!";
     console.log("Winner!");
   } else if (userCardObj[method] == computerCardObj[method]) {
+    computerText.innerText = "Good, but not good enough!";
     console.log("Draw!");
   } else {
+    computerText.innerText = "Mwhahahaha!";
     console.log("Loser!");
   }
 };

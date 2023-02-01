@@ -83,7 +83,7 @@ body {
 .computerWaiting {
   font-family: $text-font;
   color: white;
-  font-size: 1.1rem;
+  font-size: 1rem;
   grid-area: waiting;
   display: flex;
   justify-content: center;
@@ -112,7 +112,7 @@ body {
     font-family: $main-font;
     border-radius: 5px;
     color: white;
-    font-size: 2rem;
+    font-size: 1.2rem;
     padding: 14px;
     cursor: pointer;
     box-shadow: black 5px 5px 5px;
@@ -140,8 +140,8 @@ body {
     font-family: $main-font;
     border-radius: 5px;
     color: white;
-    font-size: 3.5rem;
-    padding: 14px;
+    font-size: 2rem;
+    padding: 10px;
     box-shadow: black 5px 5px 5px;
   }
 }
@@ -212,6 +212,24 @@ body {
     font-size: 1rem;
     text-align: start;
   }
+  #winner {
+    display: flex;
+    font-family: $main-font;
+    font-size: 4rem;
+    color: green;
+  }
+  #loser {
+    display: flex;
+    font-family: $main-font;
+    font-size: 4rem;
+    color: red;
+  }
+  #draw {
+    display: flex;
+    font-family: $main-font;
+    font-size: 3rem;
+    color: orange;
+  }
 }
 
 // ------------------------- Larger screens -----------------------------
@@ -245,13 +263,13 @@ body {
   }
 
   .catStats {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     grid-area: stats;
     margin: 25px;
   }
 
   .computerWaiting {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     grid-area: waiting;
     margin: 25px;
   }

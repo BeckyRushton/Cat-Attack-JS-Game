@@ -78,7 +78,7 @@ body {
 .computerWaiting {
   font-family: "Poppins", sans-serif;
   color: white;
-  font-size: 1.1rem;
+  font-size: 1rem;
   grid-area: waiting;
   display: flex;
   justify-content: center;
@@ -107,7 +107,7 @@ body {
   font-family: "Solitreo", sans-serif;
   border-radius: 5px;
   color: white;
-  font-size: 2rem;
+  font-size: 1.2rem;
   padding: 14px;
   cursor: pointer;
   box-shadow: black 5px 5px 5px;
@@ -136,8 +136,8 @@ body {
   font-family: "Solitreo", sans-serif;
   border-radius: 5px;
   color: white;
-  font-size: 3.5rem;
-  padding: 14px;
+  font-size: 2rem;
+  padding: 10px;
   box-shadow: black 5px 5px 5px;
 }
 
@@ -211,6 +211,24 @@ body {
   font-size: 1rem;
   text-align: start;
 }
+.catCard #winner {
+  display: flex;
+  font-family: "Solitreo", sans-serif;
+  font-size: 4rem;
+  color: green;
+}
+.catCard #loser {
+  display: flex;
+  font-family: "Solitreo", sans-serif;
+  font-size: 4rem;
+  color: red;
+}
+.catCard #draw {
+  display: flex;
+  font-family: "Solitreo", sans-serif;
+  font-size: 3rem;
+  color: orange;
+}
 
 @media screen and (min-width: 768px) {
   .gameName {
@@ -237,12 +255,12 @@ body {
     grid-template-areas: "user user user nill computer computer computer" "user user user nill computer computer computer" "stats stats stats duel waiting waiting waiting";
   }
   .catStats {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     grid-area: stats;
     margin: 25px;
   }
   .computerWaiting {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     grid-area: waiting;
     margin: 25px;
   }
