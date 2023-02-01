@@ -7,6 +7,7 @@
 
 body {
   background-color: rgb(255, 255, 255);
+  min-width: 500px;
 }
 
 .gameName {
@@ -228,6 +229,9 @@ body {
 }
 
 @media screen and (min-width: 768px) {
+  body {
+    max-width: 1600px;
+  }
   .gameName {
     gap: 20px;
   }
