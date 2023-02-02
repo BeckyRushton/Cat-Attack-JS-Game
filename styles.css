@@ -25,7 +25,6 @@ body {
 }
 .gameName__tagline {
   font-size: 2rem;
-  margin-bottom: 10px;
 }
 
 .resultMessage {
@@ -50,7 +49,7 @@ body {
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: bold;
 }
 .scores__user {
@@ -73,7 +72,7 @@ body {
 .catStats {
   font-family: "Poppins", sans-serif;
   color: white;
-  font-size: 1.1rem;
+  font-size: 1rem;
   grid-area: stats;
   display: flex;
   flex-direction: column;
@@ -94,7 +93,7 @@ body {
 .computerWaiting {
   font-family: "Poppins", sans-serif;
   color: white;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   grid-area: waiting;
   display: flex;
   justify-content: center;
@@ -188,7 +187,7 @@ body {
 #duel {
   padding: 20px;
   width: 15rem;
-  background-color: rgb(167, 151, 10);
+  background-color: rgb(89, 163, 59);
   color: white;
   font-family: "Solitreo", sans-serif;
   font-size: 2rem;
@@ -198,8 +197,8 @@ body {
 }
 
 #duel:hover {
-  background-color: rgb(99, 150, 16);
-  transition: 200ms;
+  background-color: rgb(187, 68, 68);
+  transition: 500ms;
 }
 
 .catCard {
@@ -237,7 +236,6 @@ body {
   }
   .gameName__title {
     font-size: 7rem;
-    margin-top: 70px;
   }
   .gameName__tagline {
     font-size: 2.5rem;
@@ -250,8 +248,11 @@ body {
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas: "user user user nill computer computer computer" "user user user nill computer computer computer" "stats stats stats duel waiting waiting waiting";
   }
+  .resultMessage {
+    font-size: 5rem;
+  }
   .catStats {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     grid-area: stats;
     margin: 25px;
   }
@@ -291,11 +292,11 @@ body {
     grid-area: duel;
   }
   #duel {
-    width: 8rem;
+    width: 15rem;
     font-size: 2rem;
   }
   .catCard__stats {
     padding: 10px;
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 }/*# sourceMappingURL=styles.css.map */
