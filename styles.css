@@ -8,6 +8,13 @@
 body {
   background-color: rgb(255, 255, 255);
   min-width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gameWindow {
+  max-width: 1200px;
 }
 
 .gameName {
@@ -126,6 +133,7 @@ body {
   padding: 14px;
   cursor: pointer;
   box-shadow: black 5px 5px 5px;
+  padding: 5px;
 }
 
 .catCardUser__card:hover {
@@ -154,7 +162,7 @@ body {
   border-radius: 5px;
   color: white;
   font-size: 2rem;
-  padding: 10px;
+  padding: 5px;
   box-shadow: black 5px 5px 5px;
 }
 
@@ -273,25 +281,27 @@ body {
     grid-area: user;
   }
   .catCardUser__card {
-    height: 400px;
-    width: 250px;
-    font-size: 2.5rem;
+    height: 450px;
+    width: 280px;
+    font-size: 2.8rem;
+    padding: 5px;
   }
   .catCardUser__card:hover {
-    height: 390px;
-    width: 240px;
+    height: 440px;
+    width: 270px;
   }
   .catCardComputer {
     grid-area: computer;
   }
   .catCardComputer__card {
-    height: 400px;
-    width: 250px;
+    height: 450px;
+    width: 280px;
     font-size: 4rem;
+    padding: 5px;
   }
   .catCardComputer__card:hover {
-    height: 390px;
-    width: 240px;
+    height: 440px;
+    width: 270px;
   }
   .catCardDivide {
     grid-area: nill;
@@ -318,6 +328,6 @@ body {
   }
   .catCard__stats {
     padding: 10px;
-    font-size: 1rem;
+    font-size: 1.3rem;
   }
 }/*# sourceMappingURL=styles.css.map */

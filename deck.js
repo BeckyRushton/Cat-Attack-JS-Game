@@ -190,7 +190,7 @@ const catDeck = [
   {
     name: "Handsome Cat",
     cuteness: 10,
-    stealth: 6,
+    stealth: 7,
     agility: 5,
     image:
       "https://ik.imagekit.io/cdrmfch7b/handsome_cat.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1675346997661",

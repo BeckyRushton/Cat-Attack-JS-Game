@@ -13,62 +13,64 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header class="gameName">
-      <div class="gameName__title">Cat Attack</div>
-      <div class="gameName__tagline">
-        The first to reach 5 points is the winner!
-      </div>
-      <div class="resultMessage">
-        <div class="resultMessage__winner"></div>
-        <div class="resultMessage__loser"></div>
-        <div class="resultMessage__draw"></div>
-      </div>
-      <div class="scores">
-        <div class="scores__user">Score: 0</div>
-        <div class="scores__computer">Score: 0</div>
-      </div>
-    </header>
+    <div class="gameWindow">
+      <header class="gameName">
+        <div class="gameName__title">Cat Attack</div>
+        <div class="gameName__tagline">
+          The first to reach 5 points is the winner!
+        </div>
+        <div class="resultMessage">
+          <div class="resultMessage__winner"></div>
+          <div class="resultMessage__loser"></div>
+          <div class="resultMessage__draw"></div>
+        </div>
+        <div class="scores">
+          <div class="scores__user">Score: 0</div>
+          <div class="scores__computer">Score: 0</div>
+        </div>
+      </header>
 
-    <div class="cardTable">
-      <div class="catCardUser">
-        <div class="catCardUser__card">Click to choose a card</div>
-      </div>
-
-      <div class="catCardDivide">
-        <div class="catIcon">
-          <img src="./icons8-pixel-cat-96.png" alt="pixel cat icon" />
+      <div class="cardTable">
+        <div class="catCardUser">
+          <div class="catCardUser__card">Click to choose a card</div>
         </div>
 
-        <div class="versus">vs</div>
-      </div>
+        <div class="catCardDivide">
+          <div class="catIcon">
+            <img src="./icons8-pixel-cat-96.png" alt="pixel cat icon" />
+          </div>
 
-      <div class="catCardComputer">
-        <div class="catCardComputer__card">Cat Attack</div>
-      </div>
-
-      <div class="catStats">
-        <div>Choose method of attack:</div>
-        <div class="catStats__one">
-          <label for="stat01">Cuteness</label>
-          <input id="stat01" type="checkbox" />
+          <div class="versus">vs</div>
         </div>
 
-        <div class="catStats__two">
-          <label for="stat02">Stealth </label>
-          <input id="stat02" type="checkbox" />
+        <div class="catCardComputer">
+          <div class="catCardComputer__card">Cat Attack</div>
         </div>
 
-        <div class="catStats__three">
-          <label for="stat03">Agility</label>
-          <input id="stat03" type="checkbox" />
+        <div class="catStats">
+          <div>Choose method of attack:</div>
+          <div class="catStats__one">
+            <label for="stat01">Cuteness</label>
+            <input id="stat01" type="checkbox" />
+          </div>
+
+          <div class="catStats__two">
+            <label for="stat02">Stealth </label>
+            <input id="stat02" type="checkbox" />
+          </div>
+
+          <div class="catStats__three">
+            <label for="stat03">Agility</label>
+            <input id="stat03" type="checkbox" />
+          </div>
         </div>
-      </div>
 
-      <div class="duelButton">
-        <button id="duel">Duel</button>
-      </div>
+        <div class="duelButton">
+          <button id="duel">Duel</button>
+        </div>
 
-      <div class="computerWaiting">Computer is waiting...</div>
+        <div class="computerWaiting">Computer is waiting...</div>
+      </div>
     </div>
   </body>
 </html>
