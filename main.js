@@ -12,11 +12,17 @@ const resultMessageLoser = document.querySelector(".resultMessage__loser");
 const userScoreDisplay = document.querySelector(".scores__user");
 const computerScoreDisplay = document.querySelector(".scores__computer");
 const jsConfetti = new JSConfetti();
+
+//  Global variables
 let cardSelected = false;
 let userCardObj = null;
 let computerCardObj = null;
 let userScore = 0;
 let computerScore = 0;
+
+// Function that creates a card for the game
+// input: catcharacters (type = object)
+// output: html string
 
 const makeCard = (catCharacters) => {
   const cardHTML = `<div class="catCard">

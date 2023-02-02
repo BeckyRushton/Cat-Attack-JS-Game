@@ -163,6 +163,7 @@ body {
   transition: 500ms;
   height: 340px;
   width: 190px;
+  cursor: pointer;
 }
 
 .catCardDivide {
@@ -235,9 +236,6 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  body {
-    max-width: 1600px;
-  }
   .gameName {
     gap: 20px;
   }
