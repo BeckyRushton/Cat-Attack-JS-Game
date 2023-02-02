@@ -60,7 +60,7 @@ body {
 }
 
 .cardTable {
-  background-color: rgb(121, 116, 128);
+  background-color: rgb(134, 116, 139);
   margin: 2%;
   display: grid;
   border-radius: 5px;
@@ -80,7 +80,7 @@ body {
   align-items: flex-start;
   margin: 20px;
   padding: 20px;
-  background-color: rgb(77, 77, 122);
+  background-color: rgb(92, 47, 104);
   border-radius: 5px;
 }
 
@@ -98,7 +98,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(77, 77, 122);
+  background-color: rgb(92, 47, 104);
   margin: 20px;
   padding: 20px;
   border-radius: 5px;
@@ -187,7 +187,7 @@ body {
 #duel {
   padding: 20px;
   width: 15rem;
-  background-color: rgb(89, 163, 59);
+  background-color: rgb(38, 132, 209);
   color: white;
   font-family: "Solitreo", sans-serif;
   font-size: 2rem;
@@ -197,7 +197,7 @@ body {
 }
 
 #duel:hover {
-  background-color: rgb(187, 68, 68);
+  background-color: rgb(31, 76, 173);
   transition: 500ms;
 }
 
@@ -235,7 +235,7 @@ body {
     gap: 20px;
   }
   .gameName__title {
-    font-size: 7rem;
+    font-size: 8rem;
   }
   .gameName__tagline {
     font-size: 2.5rem;
@@ -249,7 +249,7 @@ body {
     grid-template-areas: "user user user nill computer computer computer" "user user user nill computer computer computer" "stats stats stats duel waiting waiting waiting";
   }
   .resultMessage {
-    font-size: 5rem;
+    font-size: 4.5rem;
   }
   .catStats {
     font-size: 1.5rem;

@@ -3,8 +3,8 @@ $main-font: "Solitreo", sans-serif;
 $text-font: "Poppins", sans-serif;
 $card-colour: rgb(25, 24, 26);
 $second-card-colour: rgb(65, 65, 65);
-$options-colour: rgb(77, 77, 122);
-$table-colour: rgb(121, 116, 128);
+$options-colour: rgb(92, 47, 104);
+$table-colour: rgb(134, 116, 139);
 
 * {
   padding: 0;
@@ -191,7 +191,7 @@ body {
 #duel {
   padding: 20px;
   width: 15rem;
-  background-color: rgb(89, 163, 59);
+  background-color: rgb(38, 132, 209);
   color: white;
   font-family: $main-font;
   font-size: 2rem;
@@ -200,7 +200,7 @@ body {
   border-radius: 5px;
 }
 #duel:hover {
-  background-color: rgb(187, 68, 68);
+  background-color: rgb(31, 76, 173);
   transition: 500ms;
 }
 
@@ -239,7 +239,7 @@ body {
   .gameName {
     gap: 20px;
     &__title {
-      font-size: 7rem;
+      font-size: 8rem;
     }
     &__tagline {
       font-size: 2.5rem;
@@ -259,7 +259,7 @@ body {
   }
 
   .resultMessage {
-    font-size: 5rem;
+    font-size: 4.5rem;
   }
 
   .catStats {
