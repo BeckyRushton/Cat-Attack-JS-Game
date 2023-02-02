@@ -27,11 +27,13 @@ body {
   text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
+
   &__title {
-    font-size: 5rem;
-    margin-top: 50px;
+    font-size: 6rem;
+    margin-top: 20px;
+    height: 100px;
     font-weight: bold;
   }
   &__tagline {
@@ -73,7 +75,7 @@ body {
 
 .cardTable {
   background-color: $table-colour;
-  margin: 2%;
+  margin: 1%;
   display: grid;
   border-radius: 5px;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -252,17 +254,16 @@ body {
   .gameName {
     gap: 20px;
     &__title {
-      font-size: 8rem;
+      font-size: 7rem;
     }
     &__tagline {
-      font-size: 2.5rem;
+      font-size: 2rem;
     }
   }
   .scores {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
   .cardTable {
-    margin: 3%;
     display: grid;
     border-radius: 5px;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -274,19 +275,21 @@ body {
   }
 
   .resultMessage {
-    font-size: 4.5rem;
+    font-size: 4rem;
   }
 
   .catStats {
     font-size: 1.5rem;
     grid-area: stats;
     margin: 30px;
+    height: 200px;
   }
 
   .computerWaiting {
     font-size: 2rem;
     grid-area: waiting;
     margin: 30px;
+    height: 200px;
   }
 
   .catCardUser {
