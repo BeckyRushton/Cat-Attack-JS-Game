@@ -178,5 +178,14 @@ const catDeck = [
     image:
       "https://ik.imagekit.io/cdrmfch7b/Moustache_cat.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1675028172557",
   },
+
+  {
+    name: "Dexterous Cat",
+    cuteness: 9,
+    stealth: 7,
+    agility: 10,
+    image:
+      "https://ik.imagekit.io/cdrmfch7b/Dexterous_Cat?ik-sdk-version=javascript-1.4.3&updatedAt=1675333832174",
+  },
 ];
 export default catDeck;
