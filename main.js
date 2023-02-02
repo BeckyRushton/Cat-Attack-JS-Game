@@ -23,7 +23,6 @@ let computerScore = 0;
 // Function that creates a card for the game
 // input: catcharacters (type = object)
 // output: html string
-
 const makeCard = (catCharacters) => {
   const cardHTML = `<div class="catCard">
   <img class="catCard__image" src=${catCharacters.image} alt="image of ${catCharacters.name}" /> 
@@ -37,6 +36,9 @@ const makeCard = (catCharacters) => {
   return cardHTML;
 };
 
+// Function that pulls a random card from the deck (array) for user and computer
+// If user already chose a card, it doesn't allow them to choose another until next round
+// Computer cannot choose the same card as it has been removed from the array
 const handleChooseCard = () => {
   if (cardSelected) {
     return false;
@@ -60,15 +62,17 @@ const handleChooseCard = () => {
   cardSelected = true;
 };
 
+// Function that checks which method has been checked for comparison in next function
+// Only allows the user to check one box at a time
 const handleSelectAttack = (event) => {
   const attackMethod = event.target;
-
   cutenessCheckBox.checked = false;
   stealthCheckBox.checked = false;
   agilityCheckBox.checked = false;
   attackMethod.checked = true;
 };
 
+// Function that resets the game table to the default html and no card or method selection
 const returnToDefault = () => {
   resultMessageWinner.innerText = "";
   resultMessageDraw.innerText = "";
@@ -85,6 +89,13 @@ const returnToDefault = () => {
   duelButton.innerText = "Duel";
 };
 
+// Function that looks at the button and either:
+// - Compares method numbers and outputs result for winner/draw/loser
+// - Resets to default without removing scores for new round
+// - Resets to default for everything for new game
+// This function also sends out two alerts that must be addressed before user can duel:
+// - If no card is selected
+// - If no method of attack is selected
 const handleDuel = () => {
   if (duelButton.innerText === "Next Round") {
     returnToDefault();
@@ -155,6 +166,7 @@ const handleDuel = () => {
   }
 };
 
+// Event listeners for interactive components
 cutenessCheckBox.addEventListener("click", handleSelectAttack);
 stealthCheckBox.addEventListener("click", handleSelectAttack);
 agilityCheckBox.addEventListener("click", handleSelectAttack);
