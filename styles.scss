@@ -62,8 +62,9 @@ body {
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: bold;
+  height: 15px;
 
   &__user {
     margin-left: 15%;
@@ -79,8 +80,9 @@ body {
   display: grid;
   border-radius: 5px;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   grid-template-areas:
+    "user user user nill computer computer computer"
     "user user user nill computer computer computer"
     "user user user nill computer computer computer"
     "stats stats stats nill waiting waiting waiting"
@@ -100,6 +102,7 @@ body {
   padding: 20px;
   background-color: $options-colour;
   border-radius: 5px;
+  height: 150px;
 }
 #stat01,
 #stat02,
@@ -109,7 +112,7 @@ body {
 .computerWaiting {
   font-family: $text-font;
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   grid-area: waiting;
   display: flex;
   justify-content: center;
@@ -118,6 +121,7 @@ body {
   margin-right: 30px;
   padding: 20px;
   border-radius: 5px;
+  height: 150px;
 }
 
 .catCardUser {
@@ -201,6 +205,7 @@ body {
   justify-content: center;
   align-items: center;
   grid-area: duel;
+  height: 100px;
 }
 
 #duel {
@@ -213,9 +218,10 @@ body {
   cursor: pointer;
   box-shadow: black 5px 5px 5px;
   border-radius: 5px;
+  margin-top: 50px;
 }
 #duel:hover {
-  background-color: rgb(50, 170, 218);
+  background-color: rgb(90, 170, 24);
   box-shadow: $hover-colour 5px 5px 5px;
   transition: 500ms;
   width: 14rem;
@@ -261,7 +267,7 @@ body {
     }
   }
   .scores {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
   }
   .cardTable {
     display: grid;
@@ -281,24 +287,25 @@ body {
   .catStats {
     font-size: 1.5rem;
     grid-area: stats;
-    margin: 30px;
-    height: 200px;
+    margin-left: 40px;
+    height: 220px;
   }
 
   .computerWaiting {
-    font-size: 2rem;
+    font-size: 1.7rem;
     grid-area: waiting;
-    margin: 30px;
-    height: 200px;
+    margin-right: 40px;
+    height: 220px;
   }
 
   .catCardUser {
     grid-area: user;
+    height: 500px;
 
     &__card {
       height: 450px;
       width: 280px;
-      font-size: 2.8rem;
+      font-size: 2.5rem;
       padding: 5px;
     }
   }
@@ -308,6 +315,7 @@ body {
   }
   .catCardComputer {
     grid-area: computer;
+    height: 500px;
 
     &__card {
       height: 450px;
@@ -322,7 +330,7 @@ body {
   }
   .catCardDivide {
     grid-area: nill;
-    font-size: 4rem;
+    font-size: 5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -335,6 +343,7 @@ body {
   .duelButton {
     grid-area: duel;
     width: 15rem;
+    margin: 30px;
   }
 
   #duel {
@@ -342,7 +351,7 @@ body {
     font-size: 2rem;
   }
   #duel:hover {
-    width: 14.3rem;
+    width: 14rem;
     height: 5rem;
   }
 
