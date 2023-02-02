@@ -138,7 +138,9 @@ body {
 }
 .catCardUser__card:hover {
   box-shadow: $hover-colour 5px 5px 8px;
-  transition: 200ms;
+  transition: 500ms;
+  height: 340px;
+  width: 190px;
 }
 .catCardComputer {
   grid-area: computer;
@@ -165,7 +167,9 @@ body {
 }
 .catCardComputer__card:hover {
   box-shadow: $hover-colour 5px 5px 8px;
-  transition: 200ms;
+  transition: 500ms;
+  height: 340px;
+  width: 190px;
 }
 .catCardDivide {
   grid-area: nill;
@@ -204,6 +208,8 @@ body {
   background-color: rgb(50, 170, 218);
   box-shadow: $hover-colour 5px 5px 5px;
   transition: 500ms;
+  width: 14rem;
+  height: 5rem;
 }
 
 .catCard {
@@ -287,6 +293,10 @@ body {
       font-size: 2.5rem;
     }
   }
+  .catCardUser__card:hover {
+    height: 390px;
+    width: 240px;
+  }
   .catCardComputer {
     grid-area: computer;
 
@@ -295,6 +305,10 @@ body {
       width: 250px;
       font-size: 4rem;
     }
+  }
+  .catCardComputer__card:hover {
+    height: 390px;
+    width: 240px;
   }
   .catCardDivide {
     grid-area: nill;
@@ -310,11 +324,16 @@ body {
   }
   .duelButton {
     grid-area: duel;
+    width: 15rem;
   }
 
   #duel {
     width: 15rem;
     font-size: 2rem;
+  }
+  #duel:hover {
+    width: 14.3rem;
+    height: 5rem;
   }
 
   .catCard__stats {
