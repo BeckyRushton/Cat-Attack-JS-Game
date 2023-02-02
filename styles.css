@@ -49,14 +49,14 @@ body {
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: bold;
 }
 .scores__user {
-  margin-left: 20%;
+  margin-left: 15%;
 }
 .scores__computer {
-  margin-right: 20%;
+  margin-right: 15%;
 }
 
 .cardTable {
@@ -78,7 +78,7 @@ body {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: flex-start;
-  margin: 20px;
+  margin-left: 40px;
   padding: 20px;
   background-color: rgb(92, 47, 104);
   border-radius: 5px;
@@ -99,7 +99,7 @@ body {
   justify-content: center;
   align-items: center;
   background-color: rgb(92, 47, 104);
-  margin: 20px;
+  margin-right: 30px;
   padding: 20px;
   border-radius: 5px;
 }
@@ -129,7 +129,7 @@ body {
 }
 
 .catCardUser__card:hover {
-  box-shadow: rgb(66, 43, 114) 5px 5px 8px;
+  box-shadow: rgb(68, 8, 54) 5px 5px 8px;
   transition: 200ms;
 }
 
@@ -157,21 +157,21 @@ body {
 }
 
 .catCardComputer__card:hover {
-  box-shadow: rgb(66, 43, 114) 5px 5px 8px;
+  box-shadow: rgb(68, 8, 54) 5px 5px 8px;
   transition: 200ms;
 }
 
 .catCardDivide {
   grid-area: nill;
-  font-size: 3rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 20px;
 }
 
 .versus {
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-family: "Solitreo", sans-serif;
   color: white;
 }
@@ -197,7 +197,8 @@ body {
 }
 
 #duel:hover {
-  background-color: rgb(31, 76, 173);
+  background-color: rgb(50, 170, 218);
+  box-shadow: rgb(68, 8, 54) 5px 5px 5px;
   transition: 500ms;
 }
 
@@ -240,6 +241,9 @@ body {
   .gameName__tagline {
     font-size: 2.5rem;
   }
+  .scores {
+    font-size: 3rem;
+  }
   .cardTable {
     margin: 3%;
     display: grid;
@@ -254,12 +258,12 @@ body {
   .catStats {
     font-size: 1.5rem;
     grid-area: stats;
-    margin: 25px;
+    margin: 30px;
   }
   .computerWaiting {
-    font-size: 1.5rem;
+    font-size: 2rem;
     grid-area: waiting;
-    margin: 25px;
+    margin: 30px;
   }
   .catCardUser {
     grid-area: user;
