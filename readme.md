@@ -8,3 +8,6 @@ The rules are as follows:
 3. When you are happy with your choice of attack, press the duel button to reveal the computer's card and see if you won, drew or lost that round
 4. Click the next round button to play as many rounds as it takes to get to 5 wins
 5. Press the new game button to reset the deck and play again!
+
+Link to notion for original ideas of game:
+https://www.notion.so/JavaScript-Game-15a97cff8ac44b30bf123dcad0460e1d
