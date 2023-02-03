@@ -191,9 +191,33 @@ const catDeck = [
     name: "Handsome Cat",
     cuteness: 10,
     stealth: 7,
-    agility: 5,
+    agility: 6,
     image:
       "https://ik.imagekit.io/cdrmfch7b/handsome_cat.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1675346997661",
+  },
+  {
+    name: "DJ Cat",
+    cuteness: 6,
+    stealth: 7,
+    agility: 9,
+    image:
+      "https://ik.imagekit.io/cdrmfch7b/dj_cat.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1675432699979",
+  },
+  {
+    name: "Bunny Cat",
+    cuteness: 6,
+    stealth: 10,
+    agility: 8,
+    image:
+      "https://ik.imagekit.io/cdrmfch7b/Bunny_cat.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1675432715012",
+  },
+  {
+    name: "Rude Cat",
+    cuteness: 8,
+    stealth: 9,
+    agility: 7,
+    image:
+      "https://ik.imagekit.io/cdrmfch7b/Rude_cat.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1675432730478",
   },
 ];
 export default catDeck;
