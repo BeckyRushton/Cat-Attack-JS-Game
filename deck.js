@@ -253,9 +253,9 @@ const catDeck = [
   },
   {
     name: "Gangster Cat",
-    cuteness: 7,
-    stealth: 7,
-    agility: 7,
+    cuteness: 8,
+    stealth: 5,
+    agility: 8,
     image:
       "https://ik.imagekit.io/cdrmfch7b/Gangster_cat.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1675434208471",
   },

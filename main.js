@@ -150,7 +150,7 @@ const handleDuel = () => {
   if (userScore == 5) {
     resultMessageWinner.innerText = "Congratulations, you won!";
     jsConfetti.addConfetti({
-      confettiRadius: 20,
+      confettiRadius: 50,
       emojis: ["🎉", "🐱", "✨", "💸", "🐾"],
       emojiSize: 50,
       confettiNumber: 150,
