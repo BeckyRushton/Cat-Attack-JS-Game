@@ -26,13 +26,15 @@ body {
   align-items: center;
 }
 .gameName__title {
-  font-size: 6rem;
+  font-size: 4rem;
   margin-top: 20px;
-  height: 100px;
+  height: 80px;
   font-weight: bold;
 }
 .gameName__tagline {
   font-size: 2rem;
+  height: 30px;
+  margin-top: 20px;
 }
 
 .resultMessage {
@@ -57,9 +59,9 @@ body {
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: bold;
-  height: 15px;
+  height: 20px;
 }
 .scores__user {
   margin-left: 15%;
@@ -250,11 +252,8 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  .gameName {
-    gap: 20px;
-  }
   .gameName__title {
-    font-size: 7rem;
+    font-size: 6rem;
   }
   .gameName__tagline {
     font-size: 2rem;
